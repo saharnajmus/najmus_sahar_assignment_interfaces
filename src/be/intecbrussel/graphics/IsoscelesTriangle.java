@@ -22,12 +22,12 @@ public class IsoscelesTriangle extends Triangle {
     }
 
     @Override
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         super.setWidth(width);
     }
 
     @Override
-    public void setPerpendicular(int perpendicular) {
+    public void setPerpendicular(double perpendicular) {
         super.setPerpendicular(perpendicular);
     }
 

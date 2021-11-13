@@ -3,9 +3,9 @@ package be.intecbrussel.graphics;
 public class Triangle extends Shape {
     public static final int ANGLES = 3;
     private static int count;
-    private int height;
-    private int width;
-    private int perpendicular;
+    private double height;
+    private double width;
+    private double perpendicular;
 
     {
         count++;
@@ -16,15 +16,15 @@ public class Triangle extends Shape {
         this(1, 1, 1);
     }
 
-    public Triangle(int width, int height) {
+    public Triangle(double width, double height) {
         this(width, height, 1);
     }
 
-    public Triangle(int width, int height, int perpendicular) {
+    public Triangle(double width, double height, double perpendicular) {
         this(width, height, perpendicular, 1, 1);
     }
 
-    public Triangle(int width, int height, int perpendicular, int x, int y) {
+    public Triangle(double width, double height, double perpendicular, int x, int y) {
         setWidth(width);
         setHeight(height);
         setPerpendicular(perpendicular);
@@ -36,27 +36,31 @@ public class Triangle extends Shape {
         this(t.getWidth(), t.getHeight(), t.getPerpendicular(), t.getX(), t.getY());
     }
 
-    public int getWidth() {
-        return width;
+    public static void setCount(int count) {
+        Triangle.count = count;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getPerpendicular() {
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getPerpendicular() {
         return perpendicular;
     }
 
-    public void setPerpendicular(int perpendicular) {
+    public void setPerpendicular(double perpendicular) {
         this.perpendicular = perpendicular;
     }
 
