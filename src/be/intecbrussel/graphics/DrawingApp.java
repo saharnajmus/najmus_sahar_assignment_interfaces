@@ -15,9 +15,10 @@ public class DrawingApp {
         textDrawingContext.draw(triangle);
         drawing.scale(50);
         drawing.scale(20);
-       drawing.scale(250);
+       drawing.scale(25);
        System.out.println("Dimensions of shapes after calling scalable methods");
         drawing.draw(textDrawingContext);
+        System.out.println(drawing.toString());
 
 
     }

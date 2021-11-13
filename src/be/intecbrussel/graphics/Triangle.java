@@ -90,6 +90,14 @@ public class Triangle extends Shape {
     }
 
     @Override
+    public String toString() {
+        return "Triangle{" +
+                "height=" + height +
+                ", width=" + width +
+                '}';
+    }
+
+    @Override
     public void scale(int factor) {
         setHeight((getHeight() / 100) * factor);
         setWidth((getWidth() / 100) * factor);

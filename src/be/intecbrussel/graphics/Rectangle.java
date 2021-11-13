@@ -69,7 +69,7 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return String.format("Rectangle with width %f,height %f at position (%d,%d)", width,height,getX(),getY());
+        return String.format("Rectangle with width %f,height %f", width,height);
     }
 
     @Override

@@ -55,7 +55,7 @@ public class Drawing implements Drawable {
 
     @Override
     public String toString() {
-        return "Drawing{" + "drawables= " + Arrays.toString(drawables) + "size " + size + "}";
+        return "Drawing{" + " drawables= " + Arrays.toString(drawables) + " size " + size + "}";
     }
 
     @Override

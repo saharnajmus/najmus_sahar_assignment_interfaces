@@ -55,6 +55,13 @@ public class Circle extends Shape {
     }
 
     @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
+
+    @Override
     public void scale(int factor) {
         setRadius((getRadius()/100)*factor);
     }
