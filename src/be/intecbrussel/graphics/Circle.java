@@ -3,7 +3,7 @@ package be.intecbrussel.graphics;
 public class Circle extends Shape {
     public static final int ANGLES = 0;
     private static int count;
-    private int radius;
+    private double radius;
 
     {
         count++;
@@ -13,11 +13,11 @@ public class Circle extends Shape {
         this(1);
     }
 
-    public Circle(int radius) {
+    public Circle(double radius) {
         this(radius, 1, 1);
     }
 
-    public Circle(int radius, int x, int y) {
+    public Circle(double radius, int x, int y) {
         setRadius(radius);
         setX(x);
         setY(y);
@@ -27,11 +27,11 @@ public class Circle extends Shape {
         this(c.getRadius(), c.getX(), c.getY());
     }
 
-    public int getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    public void setRadius(int radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 

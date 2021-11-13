@@ -3,8 +3,8 @@ package be.intecbrussel.graphics;
 public class Rectangle extends Shape {
     private static int count;
     public static final int ANGLES = 4;
-    private int width;
-    private int height;
+    private double width;
+    private double height;
 
     {
         count++;
@@ -14,12 +14,12 @@ public class Rectangle extends Shape {
         this(1, 1);
     }
 
-    public Rectangle(int width, int height) {
+    public Rectangle(double width, double height) {
         this(width, height, 1, 1);
 
     }
 
-    public Rectangle(int width, int height, int x, int y) {
+    public Rectangle(double width, double height, int x, int y) {
         setHeight(height);
         setWidth(width);
         setX(x);
@@ -31,22 +31,21 @@ public class Rectangle extends Shape {
     }
 
 
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = Math.abs(width);
-    }
-
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = Math.abs(height);
+    public void setHeight(double height) {
+        this.height = height;
     }
 
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
 
     @Override
     public double getArea() {
@@ -70,7 +69,7 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return String.format("Rectangle with width %d,height %d at position (%d,%d)", width,height,getX(),getY());
+        return String.format("Rectangle with width %f,height %f at position (%d,%d)", width,height,getX(),getY());
     }
 
     @Override

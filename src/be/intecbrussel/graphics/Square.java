@@ -11,11 +11,11 @@ public class Square extends Rectangle {
         this(1);
     }
 
-    public Square(int side) {
+    public Square(double side) {
         this(side, 1, 1);
     }
 
-    public Square(int side, int x, int y) {
+    public Square(double side, int x, int y) {
         super(side, side, x, y);
     }
 
@@ -24,22 +24,22 @@ public class Square extends Rectangle {
 
     }
 
-    public int getSide() {
+    public double getSide() {
         return getHeight();
     }
 
-    public void setSide(int side) {
+    public void setSide(double side) {
         super.setHeight(side);
         super.setWidth(side);
     }
 
     @Override
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         setSide(width);
     }
 
     @Override
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         setSide(height);
     }
 
